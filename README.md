@@ -1,3 +1,4 @@
+For Spark parts, cloudera's centos7 vm is used. This vm comes with necessary jar files for hadoop, spark, hive. 
 ### Spark Stream with Java
 This repository processes data that includes temperature degrees,
 humidity percentages, and ping times for sensor data originating from a room.
@@ -7,9 +8,9 @@ data surpassing a certain threshold.
 The identified data is then stored in HBase, along with timestamped records of temperature, humidity, and sensor ping data.
 
 ### To run the hbase:
-sudo service hbase-master start
-sudo service hbase-regionserver start
-hbase shell
+- sudo service hbase-master start
+- sudo service hbase-regionserver start
+- hbase shell
 
 ### To run the project as it is:
 - Run HBaseSaver.java program in Eclipse to create HBase table sensor_data. If this data exists it will delete it and create it again.
@@ -52,33 +53,33 @@ This part reads some static data from a CSV file and puts the data into Hive dat
 - Specific calculated field in Tableau: AVG(AvgTemp [or AvgHumidity] GROUPBY month_id)
 
 ### Kafka with Java
--Using some sample data of sentences with/without duplicates, the Kafka distributed messaging system produces a topic, which contains the data needed to be consumed by the consumer. 
--The consumer then consumes the message and performs logical computation and provides the overall count for each output.
--With two applications, one being the producer and the other being the consumer, a rest api is used to correctly provide the output.
+- Using some sample data of sentences with/without duplicates, the Kafka distributed messaging system produces a topic, which contains the data needed to be consumed by the consumer. 
+- The consumer then consumes the message and performs logical computation and provides the overall count for each output.
+- With two applications, one being the producer and the other being the consumer, a rest api is used to correctly provide the output.
 
 ### To use Kafka properly
--Download two Spring Boot applications through a maven project.
--Add the project to eclipse, by adding them as a maven project.
--Open the command line and run apache zookeeper
--Open the command line and run kafka server
--Run both the producer and consumer applications in intellij.
--Open postman and set the data using Post API.
--Data should successfully display in the console.
+- Download two Spring Boot applications through a maven project.
+- Add the project to eclipse, by adding them as a maven project.
+- Open the command line and run apache zookeeper
+- Open the command line and run kafka server
+- Run both the producer and consumer applications in intellij.
+- Open postman and set the data using Post API.
+- Data should successfully display in the console.
 
 #### Zookeeper & Kafka commands
-.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-.\bin\windows\kafka-server-start.bat .\config\server.properties
+- .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+- .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 
 #### Postman command: 
 When you open postman click on new, and click on HTTP.
 In the front you should see something called GET, change it to POST and type the URL: http://localhost:8080/word/post
 After doing so in postman, click on raw, and change the format to json, and post this in the body:
-
+```
 {
 
     "message": "In a well-designed database, information is stored in tables with fields such as name, age, and address; each table is designed according to a schema that defines the relationships between different entities and their attributes, and queries are used to extract specific information from the database, allowing users to filter and sort records based on various criteria, while indexes play a crucial role in optimizing the speed of data retrieval by providing quick access to particular rows in a table."
 }
-
+```
 Once you run both applications, click 'send' on postman, and the output should be displayed in intellij console.
 

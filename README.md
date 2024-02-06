@@ -1,6 +1,9 @@
+This project was split into three parts. In the first part, we simulate real-time data using Spark Streaming that gets stored into HBase. In the second part, we save a CSV data file to Hive and perform queries on it using Spark SQL. We have data visualizations for both these parts using Plotly on a Jupyter Notebook reading data from HBase, and Tableau for Hive data. Our third part is an independent Kafka exploration performing a Word Count on some test input, provided in the body of a Postman message.
+
 ![diagram-bdt](https://github.com/utkuaysev/SparkSensorStreaming/assets/33395066/1463ed93-6bfe-4947-aed8-79fcd9e8d6bc)
 
 For Spark parts, cloudera's centos7 vm is used. This vm comes with necessary jar files for hadoop, spark, and hive. 
+
 ## Spark Stream with Java
 This repository processes data that includes temperature in degrees Celsius,
 humidity percentages, and ping times for sensor data originating from a room.

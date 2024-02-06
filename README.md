@@ -20,7 +20,7 @@ hbase shell
 ```
 ### To run the project as it is:
 - Run HBaseSaver.java program in Eclipse to create HBase table sensor_data. If this data exists it will delete it and create it again.
-- Run Streaming.java program in Eclipse to start listening to new file creations. This application will process the data in 15 second intervals. Then, it will check the threshold values for temperature and humidity values, which are 22 celsius degrees for temperature and 70 percent for humidity. Also this program will save the data which is above the threshold to hbase.
+- Run Streaming.java program in Eclipse to start listening to new file creations. This application will process the data in 15 second intervals. Then, it will check the threshold values for temperature and humidity values, which are 17 celsius degrees for temperature and 70 percent for humidity. Also this program will save the data which is above the threshold to hbase.
 - Run FileSplitter.java program in an external console using the commands:
 ```
  javac FileSplitter.java

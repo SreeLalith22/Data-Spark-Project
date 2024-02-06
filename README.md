@@ -27,3 +27,5 @@ pip install happybase
 pip install plotly
 pip install pandas
 Connect to HBase from jupyter, transform the data and use on the plotly.
+
+![diagram-bdt](https://github.com/utkuaysev/SparkSensorStreaming/assets/33395066/1463ed93-6bfe-4947-aed8-79fcd9e8d6bc)

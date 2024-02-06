@@ -5,6 +5,7 @@ This project was split into three parts. In the first part, we simulate real-tim
 For Spark parts, cloudera's centos7 vm is used. This vm comes with necessary jar files for hadoop, spark, and hive. 
 
 ## Spark Stream with Java
+
 This repository processes data that includes temperature in degrees Celsius,
 humidity percentages, and ping times for sensor data originating from a room.
 It divides the home sensor dataset into chunks and generates new files.
@@ -27,6 +28,22 @@ hbase shell
  java FileSplitter
 ```
 - Necessary jar files needs to be imported
+
+### HBaseSaver Output
+<img width="834" alt="hbaseSaver" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/e9a18f32-7411-4967-928d-1c6a11973c89">
+
+### FileSplitter Output
+<img width="251" alt="MicrosoftTeams-image (1)" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/da97bb2f-f54c-4b1f-af9e-1048d9c59720">
+<img width="178" alt="MicrosoftTeams-image (2)" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/93b6ebe8-c2ea-4f44-b5fb-78193e2d0e04">
+<img width="176" alt="MicrosoftTeams-image (3)" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/8663bcae-dbac-416b-b0df-d4e8aee87972">
+
+### Streamer Output
+![image](https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/65b71fdd-c7b5-41af-8aea-48cbcc2fe922)
+
+
+### HBase
+<img width="398" alt="MicrosoftTeams-image" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/27e78903-0322-4e3c-a04f-1aabed9a044e">
+
 ## Hive with SparkSQL
 This part reads some static data from a CSV file and puts the data into Hive database with the name “project” and table name “weather”, then performs some data manipulations to create two new tables (avgPerDay and avgPerMonth) to get the average temperature and humidity per day and month respectively.
 

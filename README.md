@@ -28,9 +28,6 @@ The identified data is then stored in HBase, along with timestamped records of t
 - pip install plotly
 - pip install pandas
 - Connect to HBase from jupyter, transform the data and use on the plotly.
-
-![diagram-bdt](https://github.com/utkuaysev/SparkSensorStreaming/assets/33395066/1463ed93-6bfe-4947-aed8-79fcd9e8d6bc)
-
 ### Hive with SparkSQL
 This part reads some static data from a CSV file and puts the data into Hive database with the name “project” and table name “weather”, then performs some data manipulations to create two new tables (avgPerDay and avgPerMonth) to get the average temperature and humidity per day and month respectively.
 
@@ -82,4 +79,5 @@ After doing so in postman, click on raw, and change the format to json, and post
 }
 ```
 Once you run both applications, click 'send' on postman, and the output should be displayed in intellij console.
+![diagram-bdt](https://github.com/utkuaysev/SparkSensorStreaming/assets/33395066/1463ed93-6bfe-4947-aed8-79fcd9e8d6bc)
 

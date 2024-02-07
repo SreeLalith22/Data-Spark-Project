@@ -44,6 +44,7 @@ hbase shell
 ### HBase
 <img width="398" alt="MicrosoftTeams-image" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/33395066/27e78903-0322-4e3c-a04f-1aabed9a044e">
 
+
 ## Hive with SparkSQL
 This part reads some static data from a CSV file and puts the data into Hive database with the name “project” and table name “weather”, then performs some data manipulations to create two new tables (avgPerDay and avgPerMonth) to get the average temperature and humidity per day and month respectively.
 
@@ -56,6 +57,16 @@ This part reads some static data from a CSV file and puts the data into Hive dat
 - Run SparkHiveCreateTable from Eclipse to first read a CSV file and save it as a Hive table.
 - Run SparkHiveManipulations if you want to perform some analysis on data and create new Hive tables.
 - Run SparkHiveTesting so you can see the table output on your console or check the location using HUE.
+
+#### Creating database project and table weather
+![image](https://github.com/utkuaysev/SensorDataSparkApplications/assets/20099573/794c8929-a5ee-40c4-8676-1d46215f3193)
+![image](https://github.com/utkuaysev/SensorDataSparkApplications/assets/20099573/c5e50117-4761-4749-b306-d241263a093a)
+
+#### Performing data manipulations and creating tables avgPerDay and avgPerMonth
+![image](https://github.com/utkuaysev/SensorDataSparkApplications/assets/20099573/432a110c-5981-47d0-9173-761dc4d1da6d)
+![image](https://github.com/utkuaysev/SensorDataSparkApplications/assets/20099573/a38957fb-80bc-44e5-9716-500d035bfc10)
+
+
 ## Visualization
 ### Jupyter Notebook
 - https://linuxhostsupport.com/blog/how-to-install-jupyter-on-centos-7/

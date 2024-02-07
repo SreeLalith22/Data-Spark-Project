@@ -85,6 +85,9 @@ pip install pandas
 - Once signed in, select appropriate schema and table. 
 - Specific calculated field in Tableau: ``` AVG(AvgTemp [or AvgHumidity] GROUPBY month_id) ```
 
+<img width="555" alt="tableauHiveConnect" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/12577632/3ebd59f6-16fb-450a-a547-fa405442e52b">
+
+
 ## Kafka with Java
 - Using some sample data of sentences with/without duplicates, the Kafka distributed messaging system produces a topic, which contains the data needed to be consumed by the consumer. 
 - The consumer then consumes the message and performs logical computation and provides the overall count for each output.

@@ -82,10 +82,16 @@ pip install pandas
 - Install Cloudera Hive ODBC Driver to connect Tableau to Hive Server (https://www.cloudera.com/downloads/connectors/hive/odbc/2-7-0.html)
 - In Tableau, under “Connect to…” under “Server” select “Cloudera Hadoop” which is listed under “Installed Connectors”
 - If the driver is successfully installed, a screen to populate connection details appears. The connection is “HiveServer2”, the server address (can be found by using the shell command ifconfig on our VM, as “eth4 inet addr:”, port 10000 which is the default Hive port used by Cloudera, username authentication with username “cloudera” [and no password!]). 
-- Once signed in, select appropriate schema and table. 
-- Specific calculated field in Tableau: ``` AVG(AvgTemp [or AvgHumidity] GROUPBY month_id) ```
+- Once signed in, select appropriate schema and table.
 
 <img width="555" alt="tableauHiveConnect" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/12577632/3ebd59f6-16fb-450a-a547-fa405442e52b">
+
+- Specific calculated field in Tableau: ``` AVG(AvgTemp [or AvgHumidity] GROUPBY month_id) ```
+<img width="711" alt="avgTemperature" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/12577632/0d026a36-2c5b-40c4-bcf9-380116c9bc8d">
+<img width="708" alt="avgHumidity" src="https://github.com/utkuaysev/SensorDataSparkApplications/assets/12577632/26bfed45-3f75-460a-b47b-091431c27c85">
+
+
+
 
 
 ## Kafka with Java

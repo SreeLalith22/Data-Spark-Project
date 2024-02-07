@@ -119,3 +119,22 @@ After doing so in postman, click on raw, and change the format to json, and post
 ```
 Once you run both applications, click 'send' on postman, and the output should be displayed in intellij console.
 
+
+### Starting Apache Zookeeper
+![Zookeeper](https://github.com/utkuaysev/SensorDataSparkApplications/assets/141512299/899142bd-d708-4a10-bfea-a836d9169950)
+
+
+### Starting Apache Kafka
+![Kafka](https://github.com/utkuaysev/SensorDataSparkApplications/assets/141512299/75b06598-a2a4-4ce6-bea4-d00b8929fb5b)
+
+### Running Intellij Producer and Consumer Applications
+![Producer-Consumer](https://github.com/utkuaysev/SensorDataSparkApplications/assets/141512299/4e9e6cb5-d351-4a39-9cf1-e46fcba3e5eb)
+
+### Setting up Postman API
+![postman](https://github.com/utkuaysev/SensorDataSparkApplications/assets/141512299/7a18a46c-0042-410d-b651-48c6c3519113)
+
+### Displaying the final output to the console
+![output](https://github.com/utkuaysev/SensorDataSparkApplications/assets/141512299/f0581b3b-8d66-4ed6-9673-40886725c152)
+
+
+
